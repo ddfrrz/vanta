@@ -1,0 +1,55 @@
+VANTA — LANDING PAGE / VERSÃO 03
+
+PARA VER AGORA
+Use o arquivo separado VANTA-LP-Preview.html: baixe e abra no navegador. Ele contém as imagens e o modelo. Pode demorar um pouco para abrir, pois inclui toda a experiência 3D.
+
+PARA COLOCAR NO GITHUB
+1. Extraia este ZIP no computador.
+2. Abra a pasta do projeto e localize index.html, assets, css e js.
+3. Envie esses quatro itens juntos à pasta do site no repositório. Preserve os nomes e as subpastas.
+4. Se o seu GitHub Pages já está ativo, publique na pasta que ele utiliza.
+5. Não envie somente index.html: as pastas contêm as imagens, o estilo e o Porsche.
+
+O site não precisa de npm, instalação ou compilação para ser publicado. Todos os caminhos são relativos, inclusive quando a página fica em uma subpasta.
+
+CONTATO
+A VANTA é uma marca demonstrativa. Por padrão, Solicitar uma avaliação abre uma explicação do projeto conceitual, sem coletar dados.
+Para direcionar a um WhatsApp real, edite somente js/config.js e informe whatsapp com país, DDD e número, apenas dígitos. Exemplo de estrutura: 55 + DDD + número. Mantenha vazio para o modo demonstrativo.
+
+EXPERIÊNCIA 3D
+Desktop: o Porsche carrega ao se aproximar da seção e acompanha o scroll.
+Celular: a imagem estática aparece primeiro; Explorar em 3D ativa o modelo e o giro pelo scroll.
+Movimento reduzido: a seção fica estática e o modelo não carrega automaticamente.
+Se o 3D falhar, a fotografia renderizada permanece visível. Não há loader bloqueando a página.
+Modelo com cerca de 21,7 MB e 424 mil triângulos: o desempenho depende do dispositivo. Esta versão prioriza a validação visual; uma futura redução da geometria pode ajudar aparelhos mais modestos.
+
+ARQUIVOS
+index.html — textos e estrutura.
+css/style.css — aparência e adaptação às telas.
+js/config.js — contato.
+js/main.js — navegação, diálogo e sequência de scroll.
+js/car.js — código 3D pronto para uso.
+js/car-source.js — fonte legível da integração 3D, para desenvolvimento.
+assets — fotografias otimizadas, poster do modelo, GLB e licença do Three.js.
+
+CRÉDITOS
+Modelo: Porsche 911 with interior, por n.brizitskaya.
+https://sketchfab.com/3d-models/porsche-911-with-interior-877b1bc1739f4a2bb65d62fd7ffd9f75
+Licença informada no arquivo original: CC BY 4.0.
+https://creativecommons.org/licenses/by/4.0/
+Adaptações: texturas redimensionadas e comprimidas, materiais e iluminação, porta fechada e ocultação de peças auxiliares na apresentação. A geometria do carro não foi apresentada como criação da NORTH. Créditos também visíveis na página.
+Three.js: licença MIT incluída em assets/THREE-LICENSE.txt.
+Fotografias: fornecidas pelo usuário para o projeto.
+VANTA: projeto conceitual da NORTH, sem vínculo com as fabricantes retratadas. Não há depoimentos, avaliações ou resultados comerciais inventados.
+
+VERIFICAÇÕES DA BASE V02
+Testada em navegador Chromium com telas de 1440×960 e 390×844: giro com scroll, ativação móvel do 3D, abertura dos tratamentos e diálogo de avaliação. Nenhum erro JavaScript detectado nesses testes. Prévia única testada offline; leitura sem JavaScript e preferência de movimento reduzido também verificadas. Não substitui testes de desempenho em celulares físicos.
+
+DIREÇÃO VISUAL V02
+Abertura centralizada, luz percorrendo a carroceria, textura sutil, menu expansível, entradas de conteúdo e profundidade nas fotografias durante o scroll. O Porsche utiliza iluminação de estúdio e transições suaves de perspectiva. Animações respeitam a preferência de movimento reduzido do navegador.
+
+DIREÇÃO VISUAL V03
+Abertura fotográfica em tela cheia com três cenas selecionáveis: Essência, Precisão e Movimento. O botão Pausar interrompe o movimento das imagens. Tipografia ampliada, seção editorial clara, painéis fotográficos imersivos e assinatura VANTA no rodapé. O Porsche 3D e seus créditos foram mantidos.
+
+VERIFICAÇÃO V03
+Sintaxe JavaScript, caminhos dos arquivos, imagens, âncoras e empacotamento conferidos. A ferramenta de navegador disponível bloqueou a abertura da prévia local, por isso esta revisão visual ainda precisa ser conferida no navegador do usuário. A base 3D permanece a mesma da V02.
